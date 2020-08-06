@@ -1,0 +1,17 @@
+a
+{
+    background-color:green;
+    font-size:20px;
+}
+a:active
+{
+    background-color:orangered;
+}
+a:visited
+{
+    background-color:orangered;
+}
+.div1
+{
+    text-align:center;
+}

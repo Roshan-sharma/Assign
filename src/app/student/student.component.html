@@ -1,0 +1,12 @@
+<h1>Student</h1>
+<label>
+    Student USN
+    <input type="text" [formControl]="user" [(ngModel)]="stud_usn"><br><br>
+    <!--<span>{{ user.value }}</span>-->
+  </label>
+  <label>
+    Password
+    <input type="password" [formControl]="pass" [(ngModel)]="password"><br><br>
+  </label>
+  <button (click)="login()" value="">Login</button>
+  <p *ngFor="let stud_usn of list">USN {{stud_usn}}</p>

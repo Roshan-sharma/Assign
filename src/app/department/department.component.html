@@ -1,0 +1,12 @@
+<h1>Department</h1>
+<label>
+    Username
+    <input type="text" [formControl]="user" [(ngModel)]="username" value=""><br>
+    <!--<span>{{ user.value }}</span>--><br>
+  </label>
+  <label>
+    Password
+    <input type="password" [formControl]="pass" [(ngModel)]="password"><br><br>
+  </label>
+  <button value="" type="submit" (click)="check()">Login</button>
+  <p *ngFor="let user of list">Username {{user}}</p>

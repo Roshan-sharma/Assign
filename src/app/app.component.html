@@ -1,0 +1,16 @@
+<div class="div1">
+<h1>Welcome</h1>
+<nav>
+  <a (click)="toggleEditor('dept')" routerLinkActive='active'>Department Login</a>&nbsp;
+  <a (click)="toggleEditor('stud')" routerLinkActive='active'>Student Login</a>
+</nav>
+
+<app-department *ngIf="showDept"></app-department>
+
+<app-student *ngIf="showStud"></app-student>
+</div>
+<!--<div>
+<input type="text" [(ngModel)]="name">
+<button (click)="postData()">Post</button>
+</div>-->
+<router-outlet></router-outlet>
